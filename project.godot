@@ -14,6 +14,10 @@ config/name="GDD112-group-project"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[dotnet]
+
+project/assembly_name="GDD112-group-project"
+
 [rendering]
 
 renderer/rendering_method="mobile"

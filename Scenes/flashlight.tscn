@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://begj2j3dpscvb"]
+
+[node name="flashlight" type="Node2D"]
