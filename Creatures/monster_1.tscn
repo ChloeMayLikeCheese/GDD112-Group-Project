@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmf8361jt5w0s"]
+
+[ext_resource type="Texture2D" uid="uid://cn6mrrqhsh05j" path="res://Darkner_spritesheet.png" id="1_boi40"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h1khg"]
+size = Vector2(146, 396)
+
+[node name="Monster_1" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_h1khg")
+
+[node name="DarknerSpritesheet" type="Sprite2D" parent="."]
+texture = ExtResource("1_boi40")
+region_enabled = true
+region_rect = Rect2(1414.73, -8.28738, 177.156, 415.512)

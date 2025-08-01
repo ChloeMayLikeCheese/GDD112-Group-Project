@@ -1,12 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://caqrfwj78qk08"]
+[gd_scene load_steps=4 format=3 uid="uid://caqrfwj78qk08"]
+
+[ext_resource type="Script" path="res://Creatures/character.gd" id="1_7qeht"]
+[ext_resource type="Texture2D" uid="uid://ctghb5xdc1edm" path="res://Textures/Tileset/Trashpile2.png" id="2_a74kg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b7h46"]
+size = Vector2(66, 71)
 
 [node name="Character" type="CharacterBody2D"]
+collision_mask = 7
+script = ExtResource("1_7qeht")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_b7h46")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_a74kg")
 
 [node name="Camera2D" type="Camera2D" parent="."]
