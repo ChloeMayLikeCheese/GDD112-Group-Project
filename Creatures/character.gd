@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 var speed = 200
 func _process(_delta):
+	look_at(get_global_mouse_position())
 	var direction = Input.get_vector("Left","Right","Up","Down")
 	velocity = direction * speed
 	move_and_slide()
