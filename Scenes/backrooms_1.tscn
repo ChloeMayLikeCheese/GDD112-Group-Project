@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://caqrfwj78qk08" path="res://Creatures/character.tscn" id="1_4j7pa"]
 [ext_resource type="Texture2D" uid="uid://cptcvkakcbow3" path="res://Textures/Light.png" id="2_0fvnh"]
 [ext_resource type="Texture2D" uid="uid://b0x2uvog4fr5x" path="res://Textures/Tileset/Basetile.png" id="2_5sq33"]
-[ext_resource type="PackedScene" path="res://Creatures/monster_1.tscn" id="3_x1jhr"]
+[ext_resource type="PackedScene" uid="uid://cmf8361jt5w0s" path="res://Creatures/monster_1.tscn" id="3_x1jhr"]
 
 [node name="Backrooms_1" type="Node2D"]
 
@@ -27,4 +27,8 @@ format = 2
 z_as_relative = false
 position = Vector2(110, 2146)
 scale = Vector2(19.58, 14.72)
+texture = ExtResource("2_5sq33")
+
+[node name="Basetile" type="Sprite2D" parent="."]
+position = Vector2(447, -128)
 texture = ExtResource("2_5sq33")

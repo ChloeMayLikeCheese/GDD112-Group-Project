@@ -2,4 +2,5 @@ extends CharacterBody2D
 
 
 func interact_with_light():
-	print("aaa")
+	visible = false
+	$CollisionShape2D.disabled = true
