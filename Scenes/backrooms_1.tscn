@@ -1,17 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://c28hf7v0iarp"]
+[gd_scene load_steps=5 format=3 uid="uid://c28hf7v0iarp"]
 
 [ext_resource type="PackedScene" uid="uid://caqrfwj78qk08" path="res://Creatures/character.tscn" id="1_4j7pa"]
+[ext_resource type="Texture2D" uid="uid://cptcvkakcbow3" path="res://Textures/Light.png" id="2_0fvnh"]
 [ext_resource type="Texture2D" uid="uid://b0x2uvog4fr5x" path="res://Textures/Tileset/Basetile.png" id="2_5sq33"]
-[ext_resource type="PackedScene" uid="uid://cmf8361jt5w0s" path="res://Creatures/monster_1.tscn" id="3_x1jhr"]
+[ext_resource type="PackedScene" path="res://Creatures/monster_1.tscn" id="3_x1jhr"]
 
 [node name="Backrooms_1" type="Node2D"]
 
 [node name="Character" parent="." instance=ExtResource("1_4j7pa")]
 
+[node name="PointLight2D" type="PointLight2D" parent="Character"]
+position = Vector2(-110, 612)
+texture = ExtResource("2_0fvnh")
+
 [node name="Monsters" type="Node2D" parent="."]
 
 [node name="Monster_1" parent="Monsters" instance=ExtResource("3_x1jhr")]
-position = Vector2(421, 0)
+position = Vector2(293, -96)
 
 [node name="Static" type="Node2D" parent="."]
 
@@ -19,5 +24,7 @@ position = Vector2(421, 0)
 format = 2
 
 [node name="Basetile" type="Sprite2D" parent="Static"]
-position = Vector2(-105, -208)
+z_as_relative = false
+position = Vector2(110, 2146)
+scale = Vector2(19.58, 14.72)
 texture = ExtResource("2_5sq33")
