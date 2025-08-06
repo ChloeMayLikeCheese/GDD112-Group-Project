@@ -10,9 +10,6 @@ func _process(_delta):
 	velocity = direction * speed
 	move_and_slide()
 	
-	for body in $Area2D.get_overlapping_bodies():
-		if "interact_with_light" in body:
-			body.interact_with_light()
 #pause menu (from a youtube tutorial from Gwizz
 	if Input.is_action_just_pressed("Pause"):
 		pausemenu()

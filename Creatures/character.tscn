@@ -20,7 +20,3 @@ texture = ExtResource("2_a74kg")
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="flashlight" parent="." instance=ExtResource("3_056hc")]
-
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
