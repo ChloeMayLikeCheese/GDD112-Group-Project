@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://caqrfwj78qk08"]
 
 [ext_resource type="Script" path="res://Creatures/character.gd" id="1_7qeht"]
-[ext_resource type="Texture2D" uid="uid://b7a7050r4vubs" path="res://Textures/Tileset/Trashpile2.png" id="2_a74kg"]
+[ext_resource type="Texture2D" uid="uid://ctghb5xdc1edm" path="res://Textures/Tileset/Trashpile2.png" id="2_a74kg"]
 [ext_resource type="PackedScene" uid="uid://begj2j3dpscvb" path="res://Scenes/flashlight.tscn" id="3_056hc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b7h46"]
