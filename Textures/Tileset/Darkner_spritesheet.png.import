@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt46t4v3hk524"
-path="res://.godot/imported/Breather_spritesheet.png-fecf516cb69d3b5240b2b9bb8e925298.ctex"
+uid="uid://cn6mrrqhsh05j"
+path="res://.godot/imported/Darkner_spritesheet.png-334f12603d6613a0e92908f5bd14caf9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Breather_spritesheet.png"
-dest_files=["res://.godot/imported/Breather_spritesheet.png-fecf516cb69d3b5240b2b9bb8e925298.ctex"]
+source_file="res://Textures/Tileset/Darkner_spritesheet.png"
+dest_files=["res://.godot/imported/Darkner_spritesheet.png-334f12603d6613a0e92908f5bd14caf9.ctex"]
 
 [params]
 

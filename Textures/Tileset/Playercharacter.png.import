@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cn6mrrqhsh05j"
-path="res://.godot/imported/Darkner_spritesheet.png-3b4b089a6e7d0473d629c98a716865c9.ctex"
+uid="uid://cn1ng3uylghq5"
+path="res://.godot/imported/Playercharacter.png-bdd45995b64a5be063ae26d8ee99a6e9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Darkner_spritesheet.png"
-dest_files=["res://.godot/imported/Darkner_spritesheet.png-3b4b089a6e7d0473d629c98a716865c9.ctex"]
+source_file="res://Textures/Tileset/Playercharacter.png"
+dest_files=["res://.godot/imported/Playercharacter.png-bdd45995b64a5be063ae26d8ee99a6e9.ctex"]
 
 [params]
 

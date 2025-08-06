@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cn1ng3uylghq5"
-path="res://.godot/imported/Playercharacter.png-598d040f6919f41eced4359bdb58d721.ctex"
+uid="uid://bt46t4v3hk524"
+path="res://.godot/imported/Breather_spritesheet.png-187dcfed3c1be15161f9752253e6b36d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Playercharacter.png"
-dest_files=["res://.godot/imported/Playercharacter.png-598d040f6919f41eced4359bdb58d721.ctex"]
+source_file="res://Textures/Tileset/Breather_spritesheet.png"
+dest_files=["res://.godot/imported/Breather_spritesheet.png-187dcfed3c1be15161f9752253e6b36d.ctex"]
 
 [params]
 
