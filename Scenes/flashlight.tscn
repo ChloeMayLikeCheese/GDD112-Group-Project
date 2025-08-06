@@ -5,15 +5,8 @@
 [node name="flashlight" type="Node2D"]
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(450, 0)
+energy = 0.6
+shadow_enabled = true
+shadow_color = Color(0, 1, 0, 1)
 texture = ExtResource("1_j8qe6")
-
-[node name="Light" type="Sprite2D" parent="."]
-position = Vector2(-403, 1315)
-texture = ExtResource("1_j8qe6")
-
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
-position = Vector2(-1, 0)
-polygon = PackedVector2Array(-798, 1294, -814, 1305, -820, 1319, -817, 1333, -812, 1344, -790, 1355, -116, 1564, -91, 1561, -80, 1556, -75, 1553, -67, 1548, -60, 1542, -54, 1534, -48, 1526, -41, 1515, -34, 1501, -29, 1489, -23, 1474, -16, 1461, -8, 1435, -2, 1406, 1, 1383, 4, 1360, 5, 1334, 7, 1289, 2, 1252, -2, 1220, -7, 1196, -14, 1162, -43, 1102, -72, 1069, -111, 1059)
+offset = Vector2(400, 0)
