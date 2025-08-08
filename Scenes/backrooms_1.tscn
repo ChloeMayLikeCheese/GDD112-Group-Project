@@ -3,13 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://caqrfwj78qk08" path="res://Creatures/character.tscn" id="1_4j7pa"]
 [ext_resource type="Texture2D" uid="uid://b0x2uvog4fr5x" path="res://Textures/Tileset/Basetile.png" id="2_5sq33"]
 [ext_resource type="Texture2D" uid="uid://cq7tg5x5363ju" path="res://Textures/Tileset/Stain1.png" id="2_ksnc2"]
-<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://cmf8361jt5w0s" path="res://Creatures/monster_1.tscn" id="3_x1jhr"]
 [ext_resource type="PackedScene" uid="uid://hajuk2n703qe" path="res://Menus/pause_menu.tscn" id="4_v37ud"]
-=======
-[ext_resource type="PackedScene" path="res://Creatures/monster_1.tscn" id="3_x1jhr"]
-[ext_resource type="PackedScene" uid="uid://hajuk2n703qe" path="res://Menus/pause_menu.tscn" id="4_3ltvw"]
->>>>>>> Stashed changes
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_27vep"]
 
@@ -61,11 +56,7 @@ layer_1/tile_data = PackedInt32Array(524281, 1, 0, 458750, 1, 0, 327673, 1, 0, 6
 
 [node name="Character" parent="." instance=ExtResource("1_4j7pa")]
 
-<<<<<<< Updated upstream
 [node name="PauseMenu" parent="Character" instance=ExtResource("4_v37ud")]
-=======
-[node name="PauseMenu" parent="Character" instance=ExtResource("4_3ltvw")]
->>>>>>> Stashed changes
 visible = false
 
 [node name="Monsters" type="Node2D" parent="."]

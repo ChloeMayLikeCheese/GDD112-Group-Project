@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cn6mrrqhsh05j"
-path="res://.godot/imported/Darkner_spritesheet.png-3b4b089a6e7d0473d629c98a716865c9.ctex"
+uid="uid://c0kib0jqnde15"
+path="res://.godot/imported/Battery.png-f27f6333339ca63bd63d2fb752327c41.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Darkner_spritesheet.png"
-dest_files=["res://.godot/imported/Darkner_spritesheet.png-3b4b089a6e7d0473d629c98a716865c9.ctex"]
+source_file="res://Battery.png"
+dest_files=["res://.godot/imported/Battery.png-f27f6333339ca63bd63d2fb752327c41.ctex"]
 
 [params]
 
