@@ -2,7 +2,7 @@ extends Control
 @export var start_game:String
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass
 
 

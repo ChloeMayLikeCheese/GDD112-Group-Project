@@ -1,5 +1,5 @@
 extends Control
-
+@export var start_game:String
 @onready var main = $"../"
 
 func _on_settings_pressed():
@@ -7,7 +7,7 @@ func _on_settings_pressed():
 
 
 func _on_quit_pressed():
-	get_tree().quit()
+	get_tree().call_deferred("change_scene_to_file",start_game)
 
 
 func _on_resume_pressed():
