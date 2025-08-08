@@ -10,6 +10,7 @@ func _process(_delta):
 
 func _on_start_pressed():
 	get_tree().call_deferred("change_scene_to_file",start_game)
+	Engine.time_scale = 1
 
 
 func _on_stettings_pressed():
