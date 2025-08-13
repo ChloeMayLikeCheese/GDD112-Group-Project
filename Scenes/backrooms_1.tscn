@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://c28hf7v0iarp"]
+[gd_scene load_steps=12 format=3 uid="uid://c28hf7v0iarp"]
 
 [ext_resource type="PackedScene" uid="uid://caqrfwj78qk08" path="res://Creatures/character.tscn" id="1_4j7pa"]
 [ext_resource type="Texture2D" uid="uid://b0x2uvog4fr5x" path="res://Textures/Tileset/Basetile.png" id="2_5sq33"]
 [ext_resource type="Texture2D" uid="uid://cq7tg5x5363ju" path="res://Textures/Tileset/Stain1.png" id="2_ksnc2"]
+[ext_resource type="Texture2D" uid="uid://dsobykbaipexe" path="res://Textures/Tileset/Basetile - Copy.png" id="2_q1oui"]
 [ext_resource type="PackedScene" uid="uid://cmf8361jt5w0s" path="res://Creatures/monster_1.tscn" id="3_x1jhr"]
 [ext_resource type="PackedScene" uid="uid://hajuk2n703qe" path="res://Menus/pause_menu.tscn" id="4_v37ud"]
 
@@ -46,7 +47,7 @@ position = Vector2(-244, 386)
 scale = Vector2(20.91, 14.01)
 energy = 2.3
 blend_mode = 1
-texture = ExtResource("2_5sq33")
+texture = ExtResource("2_q1oui")
 
 [node name="Static" type="Node2D" parent="."]
 
