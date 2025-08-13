@@ -12,7 +12,6 @@ func _on_quit_pressed():
 	
 	
 func _process(_delta):
-	print("buh")
 	#pause menu (from a youtube tutorial from Gwizz
 	if Input.is_action_just_pressed("Pause"):
 		pausemenu()
