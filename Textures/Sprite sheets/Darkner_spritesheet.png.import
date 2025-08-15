@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kj5j1ed7rgs4"
-path="res://.godot/imported/Playerspritesheet.png-03a2dec93c0e88588bfd9ed2056f28dc.ctex"
+uid="uid://cn6mrrqhsh05j"
+path="res://.godot/imported/Darkner_spritesheet.png-1d0ba9b584d9db7cd9988114f3d37bb6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Tileset/Playerspritesheet.png"
-dest_files=["res://.godot/imported/Playerspritesheet.png-03a2dec93c0e88588bfd9ed2056f28dc.ctex"]
+source_file="res://Textures/Sprite sheets/Darkner_spritesheet.png"
+dest_files=["res://.godot/imported/Darkner_spritesheet.png-1d0ba9b584d9db7cd9988114f3d37bb6.ctex"]
 
 [params]
 

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Creatures/character.gd" id="1_7qeht"]
 [ext_resource type="PackedScene" uid="uid://begj2j3dpscvb" path="res://Scenes/flashlight.tscn" id="3_056hc"]
-[ext_resource type="Texture2D" uid="uid://cn1ng3uylghq5" path="res://Textures/Tileset/Playercharacter.png" id="3_gri71"]
+[ext_resource type="Texture2D" uid="uid://cn1ng3uylghq5" path="res://Textures/Sprite sheets/Playercharacter.png" id="3_gri71"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b7h46"]
 size = Vector2(95, 254)

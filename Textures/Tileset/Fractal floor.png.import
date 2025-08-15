@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cn1ng3uylghq5"
-path="res://.godot/imported/Playercharacter.png-bdd45995b64a5be063ae26d8ee99a6e9.ctex"
+uid="uid://bc6ab1vka87lf"
+path="res://.godot/imported/Fractal floor.png-134d9c4cf41e7256bb0be05197a6be05.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Tileset/Playercharacter.png"
-dest_files=["res://.godot/imported/Playercharacter.png-bdd45995b64a5be063ae26d8ee99a6e9.ctex"]
+source_file="res://Textures/Tileset/Fractal floor.png"
+dest_files=["res://.godot/imported/Fractal floor.png-134d9c4cf41e7256bb0be05197a6be05.ctex"]
 
 [params]
 
