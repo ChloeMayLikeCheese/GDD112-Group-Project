@@ -43,8 +43,8 @@ visible = false
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
 z_index = -1
-position = Vector2(-804.5, 1089.5)
-scale = Vector2(45.83, 46.25)
+position = Vector2(888, 1961.13)
+scale = Vector2(66.295, 29.1575)
 energy = 2.3
 blend_mode = 1
 texture = ExtResource("2_q1oui")
@@ -63,4 +63,4 @@ layer_1/tile_data = PackedInt32Array()
 [node name="Monsters" type="Node2D" parent="."]
 
 [node name="Monster_1" parent="Monsters" instance=ExtResource("3_x1jhr")]
-position = Vector2(-523, 733)
+position = Vector2(-403, 567)
