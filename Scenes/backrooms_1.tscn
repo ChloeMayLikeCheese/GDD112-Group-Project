@@ -131,5 +131,7 @@ layer_1/tile_data = PackedInt32Array()
 
 [node name="Character" parent="." instance=ExtResource("1_4j7pa")]
 
-[node name="Darkener" parent="." instance=ExtResource("6_8n3ad")]
-position = Vector2(-460, 70)
+[node name="Monsters" type="Node2D" parent="."]
+
+[node name="Monster_1" parent="Monsters" instance=ExtResource("3_x1jhr")]
+position = Vector2(3781, -569)
