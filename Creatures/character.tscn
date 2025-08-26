@@ -1,24 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://caqrfwj78qk08"]
+[gd_scene load_steps=4 format=3 uid="uid://caqrfwj78qk08"]
 
 [ext_resource type="Script" path="res://Creatures/character.gd" id="1_7qeht"]
 [ext_resource type="PackedScene" uid="uid://begj2j3dpscvb" path="res://Scenes/flashlight.tscn" id="3_056hc"]
 [ext_resource type="Texture2D" uid="uid://cn1ng3uylghq5" path="res://Textures/Sprite sheets/Playercharacter.png" id="3_gri71"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_b7h46"]
-size = Vector2(95, 254)
-
 [node name="Character" type="CharacterBody2D"]
 collision_mask = 7
 script = ExtResource("1_7qeht")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1.5, 7)
-shape = SubResource("RectangleShape2D_b7h46")
-
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="flashlight" parent="." instance=ExtResource("3_056hc")]
-position = Vector2(46, -17)
+position = Vector2(66, 43)
 
 [node name="Playercharacter" type="Sprite2D" parent="."]
 position = Vector2(-3.00001, 9)
@@ -26,3 +19,6 @@ scale = Vector2(0.8, 0.8)
 texture = ExtResource("3_gri71")
 region_enabled = true
 region_rect = Rect2(34.8439, 37.278, 128.502, 321.467)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-9, 136, -38, 136, -39, 131, -37, 125, -30, 123, -29, 114, -27, 103, -27, 98, -27, 68, -27, 62, -26, 51, -29, 50, -32, 58, -40, 60, -46, 59, -52, 54, -53, 48, -51, 41, -52, 24, -52, 4, -52, -29, -45, -43, -36, -50, -32, -53, -14, -53, -28, -65, -33, -82, -39, -91, -43, -100, -41, -109, -31, -119, -14, -123, -3, -121, 14, -121, 21, -119, 30, -115, 34, -108, 35, -97, 34, -84, 30, -73, 24, -66, 16, -59, 14, -53, 23, -54, 38, -50, 46, -42, 50, -31, 51, -22, 51, -14, 49, -2, 49, 19, 48, 29, 47, 37, 46, 50, 47, 60, 43, 61, 39, 62, 34, 62, 24, 61, 24, 57, 22, 57, 21, 87, 22, 96, 22, 104, 21, 110, 21, 114, 25, 119, 27, 122, 32, 125, 36, 131, 35, 134, 32, 138, 28, 138, 27, 138, 24, 138, 17, 137, 12, 137, 7, 137, 5, 137, 3, 136)

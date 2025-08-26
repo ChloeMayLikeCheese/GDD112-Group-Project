@@ -6,15 +6,18 @@ func _physics_process(delta):
 	if chasing:
 		#global_position.move_toward($"../../Character".global_position, delta * 100)
 		
-		var player = $"../../Character"
+		var player = $"../Character"
 		
 		velocity = (self.global_position - player.global_position).normalized() * move_speed
 		move_and_slide()
-		
 
 func interact_with_light():
 	visible = false
-	$CollisionShape2D.disabled = true
+	$Area2D.disabled = true
 
 func _on_timer_timeout():
 	chasing = true
+
+
+func _on_area_2d_body_entered(body):
+	get_tree().quit()

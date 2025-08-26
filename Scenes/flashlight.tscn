@@ -3,8 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://cptcvkakcbow3" path="res://Textures/Light.png" id="1_j8qe6"]
 [ext_resource type="Script" path="res://Scenes/flashlight.gd" id="1_ykhpp"]
 
-[node name="flashlight" type="Node2D"]
+[node name="flashlight" type="Area2D"]
 script = ExtResource("1_ykhpp")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(403, 1)
+polygon = PackedVector2Array(301, -254, 308, -253, 319, -248, 327, -243, 338, -234, 346, -225, 360, -206, 364, -198, 376, -174, 381, -162, 390, -132, 393, -121, 399, -89, 402, -73, 405, -27, 405, 20, 401, 68, 397, 95, 394, 111, 391, 121, 381, 155, 380, 158, 377, 165, 369, 182, 365, 190, 359, 201, 353, 209, 346, 218, 337, 228, 328, 235, 317, 242, 302, 248, 284, 248, 279, 247, 277, 246, -388, 39, -391, 39, -403, 33, -406, 32, -413, 27, -414, 25.7, -419, 18, -420, 13, -420, 0, -419, -3, -416, -9, -415, -10, -412, -15, -409, -17, -406.5, -18, -392, -25, -388, -26, 287, -255, 290, -255)
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
 energy = 2.0

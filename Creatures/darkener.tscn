@@ -1,3 +1,27 @@
-[gd_scene format=3 uid="uid://dqspds5378i1i"]
+[gd_scene load_steps=3 format=3 uid="uid://dqspds5378i1i"]
 
-[node name="Darkener" type="Node2D"]
+[ext_resource type="Script" path="res://Creatures/Darkner.gd" id="1_ctmpy"]
+[ext_resource type="Texture2D" uid="uid://cn6mrrqhsh05j" path="res://Textures/Sprite sheets/Darkner_spritesheet.png" id="2_ciyj2"]
+
+[node name="Darkner" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_ctmpy")
+
+[node name="DarknerSpritesheet" type="Sprite2D" parent="."]
+texture = ExtResource("2_ciyj2")
+region_enabled = true
+region_rect = Rect2(1414.73, -8.28738, 177.156, 415.512)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(397, 20)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(-349, 169, -352, 147, -355, 92, -349, 93, -330, 96, -315, 49, -312, -27, -333, -93, -373, -113, -373, -129, -362, -155, -358, -188, -372, -208, -386, -216, -414, -217, -425, -208, -440, -194, -443, -178, -443, -145, -436, -127, -425, -121, -421, -111, -444, -104, -465, -94, -473, -77, -483, -54, -485, -37, -487, -18, -492, -4, -493, 13, -491, 56, -487, 70, -487, 92, -480, 100, -472, 106, -461, 96, -453, 99, -445, 103, -444, 147, -447, 175, -444, 185, -433, 188, -418, 184, -410, 168, -411, 155, -410, 141, -408, 129, -407, 119, -405, 102, -402, 90, -396, 88, -396, 114, -390, 137, -388, 152, -386, 167, -380, 180, -372, 186, -362, 181)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

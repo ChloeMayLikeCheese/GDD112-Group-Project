@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://b0x2uvog4fr5x" path="res://Textures/Tileset/Basetile.png" id="2_5sq33"]
 [ext_resource type="Texture2D" uid="uid://cq7tg5x5363ju" path="res://Textures/Tileset/Stain1.png" id="2_ksnc2"]
 [ext_resource type="Texture2D" uid="uid://dsobykbaipexe" path="res://Textures/Tileset/Basetile - Copy.png" id="2_q1oui"]
-[ext_resource type="PackedScene" uid="uid://cmf8361jt5w0s" path="res://Creatures/monster_1.tscn" id="3_x1jhr"]
 [ext_resource type="PackedScene" uid="uid://hajuk2n703qe" path="res://Menus/pause_menu.tscn" id="4_v37ud"]
+[ext_resource type="PackedScene" uid="uid://dqspds5378i1i" path="res://Creatures/darkener.tscn" id="6_8n3ad"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_27vep"]
 
@@ -60,7 +60,5 @@ layer_1/tile_data = PackedInt32Array()
 
 [node name="Character" parent="." instance=ExtResource("1_4j7pa")]
 
-[node name="Monsters" type="Node2D" parent="."]
-
-[node name="Monster_1" parent="Monsters" instance=ExtResource("3_x1jhr")]
-position = Vector2(-403, 567)
+[node name="Darkener" parent="." instance=ExtResource("6_8n3ad")]
+position = Vector2(-460, 70)
