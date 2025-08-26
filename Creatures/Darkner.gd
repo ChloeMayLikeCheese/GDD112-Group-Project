@@ -1,8 +1,9 @@
 extends CharacterBody2D
 
+
 var move_speed = -500
 var chasing = false
-func _physics_process(delta):
+func _physics_process(_delta):
 	if chasing:
 		#global_position.move_toward($"../../Character".global_position, delta * 100)
 		
@@ -17,7 +18,5 @@ func interact_with_light():
 
 func _on_timer_timeout():
 	chasing = true
-
-
-func _on_area_2d_body_entered(body):
-	get_tree().quit()
+func _process(_delta):
+	pass
