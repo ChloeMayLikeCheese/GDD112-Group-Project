@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cn6mrrqhsh05j"
-path="res://.godot/imported/Darkner_spritesheet.png-334f12603d6613a0e92908f5bd14caf9.ctex"
+uid="uid://dlptud7302oe8"
+path="res://.godot/imported/darker floor.png-ec77612b0036d0c02c572fb01c4707cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Tileset/Darkner_spritesheet.png"
-dest_files=["res://.godot/imported/Darkner_spritesheet.png-334f12603d6613a0e92908f5bd14caf9.ctex"]
+source_file="res://Textures/Tileset/darker floor.png"
+dest_files=["res://.godot/imported/darker floor.png-ec77612b0036d0c02c572fb01c4707cb.ctex"]
 
 [params]
 

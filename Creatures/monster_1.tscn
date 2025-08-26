@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cmf8361jt5w0s"]
 
 [ext_resource type="Script" path="res://Creatures/Darkner.gd" id="1_hpd0k"]
-[ext_resource type="Texture2D" uid="uid://cn6mrrqhsh05j" path="res://Textures/Tileset/Darkner_spritesheet.png" id="2_i06o2"]
+[ext_resource type="Texture2D" uid="uid://cn6mrrqhsh05j" path="res://Textures/Sprite sheets/Darkner_spritesheet.png" id="2_i06o2"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8o5x0"]
 radius = 85.0
