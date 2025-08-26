@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+
 var move_speed = -500
 var chasing = false
 func _physics_process(_delta):
@@ -18,3 +19,5 @@ func interact_with_light():
 
 func _on_timer_timeout():
 	chasing = true
+func _process(_delta):
+	pass
