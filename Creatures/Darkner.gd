@@ -1,22 +1,35 @@
 extends CharacterBody2D
-
-
-var move_speed = -500
+signal flashlight
+var move_speed = -800
 var chasing = false
+func _ready():
+	$"../../PointLight2D".visible = true
+	$"../../Character".visible = true
+	$"../../Youwin".visible = false
 func _physics_process(_delta):
+
 	if chasing:
-		#global_position.move_toward($"../../Character".global_position, delta * 100)
-		
-		var player = $"../Character"
+		var player = $"../../Character"
 		
 		velocity = (self.global_position - player.global_position).normalized() * move_speed
 		move_and_slide()
-
-func interact_with_light():
-	visible = false
-	$Area2D.disabled = true
+		
 
 func _on_timer_timeout():
 	chasing = true
-func _process(_delta):
-	pass
+
+
+func _on_character_flashlight():
+	$Timer2.start()
+	chasing = false
+
+
+func _on_timer_2_timeout():
+	visible = false
+	$Area2D/CollisionShape2D.disabled = true
+	$"../../PointLight2D".visible = false
+	$"../../Character".visible = false
+	$"../../Youwin".position.x = $"../../Character".position.x
+	$"../../Youwin".position.y = $"../../Character".position.y
+	$"../../Youwin".visible = true
+	

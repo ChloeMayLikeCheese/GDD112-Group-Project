@@ -194,11 +194,17 @@ animations = [{
 collision_mask = 7
 script = ExtResource("1_7qeht")
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 7)
+shape = SubResource("RectangleShape2D_b7h46")
+
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="flashlight" parent="." instance=ExtResource("3_056hc")]
-position = Vector2(66, 43)
+position = Vector2(46, -17)
 
 [node name="CharacterAnimations" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_4bn3p")
 animation = &"DownIdle"
+
+[connection signal="god_help_us_all" from="flashlight" to="." method="_on_flashlight_god_help_us_all"]
