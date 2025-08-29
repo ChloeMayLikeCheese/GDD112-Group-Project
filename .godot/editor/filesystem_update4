@@ -7,3 +7,5 @@ res://Creatures/character.tscn
 res://Scenes/backrooms_1.tscn
 res://Scenes/flashlight.tscn
 res://Menus/pause_menu.tscn
+res://Creatures/monster_1.tscn
+res://Creatures/character.gd
