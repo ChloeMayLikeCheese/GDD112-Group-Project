@@ -206,5 +206,3 @@ position = Vector2(46, -17)
 [node name="CharacterAnimations" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_4bn3p")
 animation = &"DownIdle"
-
-[connection signal="god_help_us_all" from="flashlight" to="." method="_on_flashlight_god_help_us_all"]
