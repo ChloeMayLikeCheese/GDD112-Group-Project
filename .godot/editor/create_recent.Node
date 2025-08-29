@@ -1,3 +1,8 @@
+TextureButton
+Button
+TextureRect
+Control
+CanvasLayer
 Sprite2D
 Timer
 Area2D

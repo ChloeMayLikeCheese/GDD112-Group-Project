@@ -1,0 +1,104 @@
+[gd_scene load_steps=5 format=3 uid="uid://b4e712qwmlqcy"]
+
+[ext_resource type="Script" path="res://Menus/journal.gd" id="1_xmow3"]
+[ext_resource type="Texture2D" uid="uid://b0x2uvog4fr5x" path="res://Textures/Tileset/Basetile.png" id="2_q2kyx"]
+[ext_resource type="Texture2D" uid="uid://dsobykbaipexe" path="res://Textures/Tileset/Basetile - Copy.png" id="3_ytoui"]
+[ext_resource type="Script" path="res://Menus/JournalButton.gd" id="4_7fygk"]
+
+[node name="Journal" type="CanvasLayer"]
+script = ExtResource("1_xmow3")
+
+[node name="JournalBook" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 103.0
+offset_top = 93.0
+offset_right = -121.0
+offset_bottom = -104.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_q2kyx")
+
+[node name="InformationPage" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 632.0
+offset_top = 114.0
+offset_right = -179.0
+offset_bottom = -131.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ytoui")
+
+[node name="JournalButton" type="TextureButton" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 147.0
+offset_top = 121.0
+offset_right = -905.0
+offset_bottom = -427.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_ytoui")
+script = ExtResource("4_7fygk")
+
+[node name="JournalButton2" type="TextureButton" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 299.0
+offset_top = 260.0
+offset_right = -753.0
+offset_bottom = -288.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_ytoui")
+script = ExtResource("4_7fygk")
+
+[node name="JournalButton3" type="TextureButton" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 427.0
+offset_top = 119.0
+offset_right = -625.0
+offset_bottom = -429.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_ytoui")
+script = ExtResource("4_7fygk")
+
+[node name="JournalButton4" type="TextureButton" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 433.0
+offset_top = 390.0
+offset_right = -619.0
+offset_bottom = -158.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_ytoui")
+script = ExtResource("4_7fygk")
+
+[node name="JournalButton5" type="TextureButton" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 147.0
+offset_top = 401.0
+offset_right = -905.0
+offset_bottom = -147.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_ytoui")
+script = ExtResource("4_7fygk")
+
+[connection signal="pressed" from="JournalButton" to="JournalButton" method="_on_pressed"]
+[connection signal="pressed" from="JournalButton2" to="JournalButton2" method="_on_pressed"]
+[connection signal="pressed" from="JournalButton3" to="JournalButton3" method="_on_pressed"]
+[connection signal="pressed" from="JournalButton4" to="JournalButton4" method="_on_pressed"]
+[connection signal="pressed" from="JournalButton5" to="JournalButton5" method="_on_pressed"]
