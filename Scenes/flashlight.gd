@@ -1,6 +1,6 @@
 extends Node2D
 signal god_help_us_all
-
+#this is a flashlight designed to stop evil monsters (batteries sold separately (you may need batteries for the batteries))
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

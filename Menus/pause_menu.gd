@@ -17,7 +17,6 @@ func _process(_delta):
 		pausemenu()
 		
 func pausemenu():
-	print(paused)
 	if paused:
 		$"..".hide()
 		Engine.time_scale = 1

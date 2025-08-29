@@ -1,0 +1,2 @@
+﻿54330
+C:/Program Files/Godot/Godot.exe
