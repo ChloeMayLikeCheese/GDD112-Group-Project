@@ -3,7 +3,7 @@ signal flashlight
 @onready var CharacterAnimation = $CharacterAnimations
 
 var speed = 200
-#Player movement animations!!!!
+#Player movement and animations!!!!
 func _process(_delta):
 	var direction = Input.get_vector("Left","Right","Up","Down")
 	velocity = direction * speed
