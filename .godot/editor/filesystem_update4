@@ -1,11 +1,9 @@
-res://Creatures/monster_1.tscn
-res://Creatures/character.gd
-res://Menus/JournalButton.gd
 res://Menus/journal.tscn
-res://Menus/journal.gd
-res://Creatures/character.tscn
 res://Scenes/backrooms_1.tscn
+res://Creatures/character.tscn
 res://Scenes/flashlight.tscn
-res://Menus/pause_menu.tscn
 res://Creatures/monster_1.tscn
-res://Creatures/character.gd
+res://Menus/pause_menu.tscn
+res://Menus/journal.gd
+res://Scenes/flashlight.gd
+res://Menus/JournalButton.gd

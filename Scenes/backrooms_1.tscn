@@ -3,14 +3,12 @@
 
 [ext_resource type="PackedScene" uid="uid://caqrfwj78qk08" path="res://Creatures/character.tscn" id="1_4j7pa"]
 [ext_resource type="Texture2D" uid="uid://b0x2uvog4fr5x" path="res://Textures/Tileset/Basetile.png" id="2_5sq33"]
+[ext_resource type="PackedScene" uid="uid://b4e712qwmlqcy" path="res://Menus/journal.tscn" id="2_870qb"]
 [ext_resource type="Texture2D" uid="uid://cq7tg5x5363ju" path="res://Textures/Tileset/Stain1.png" id="2_ksnc2"]
 [ext_resource type="Texture2D" uid="uid://dsobykbaipexe" path="res://Textures/Tileset/Basetile - Copy.png" id="2_q1oui"]
 [ext_resource type="PackedScene" uid="uid://cmf8361jt5w0s" path="res://Creatures/monster_1.tscn" id="3_x1jhr"]
 [ext_resource type="PackedScene" uid="uid://hajuk2n703qe" path="res://Menus/pause_menu.tscn" id="4_v37ud"]
 [ext_resource type="Texture2D" uid="uid://dlptud7302oe8" path="res://Textures/Tileset/darker floor.png" id="5_cc86f"]
-[ext_resource type="PackedScene" uid="uid://b4e712qwmlqcy" path="res://Menus/journal.tscn" id="8_yly3u"]
-[ext_resource type="Texture2D" uid="uid://d4m20o7tsl1um" path="res://Textures/Tileset/bigmoss.png" id="6_ap0lf"]
-[ext_resource type="Texture2D" uid="uid://bc6ab1vka87lf" path="res://Textures/Tileset/Fractal floor.png" id="7_fk7sy"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_27vep"]
 
@@ -92,6 +90,9 @@ sources/5 = SubResource("TileSetAtlasSource_uujwh")
 [node name="PauseMenu" parent="." instance=ExtResource("4_v37ud")]
 visible = false
 
+[node name="Journal" parent="." instance=ExtResource("2_870qb")]
+visible = false
+
 [node name="PointLight2D" type="PointLight2D" parent="."]
 visible = false
 z_index = -1
@@ -117,8 +118,5 @@ position = Vector2(1654, -567)
 
 [node name="Monster_1" parent="Monsters" instance=ExtResource("3_x1jhr")]
 position = Vector2(-403, 567)
-
-[node name="Journal" parent="." instance=ExtResource("8_yly3u")]
-visible = false
 
 [connection signal="flashlight" from="Character" to="Monsters/Monster_1" method="_on_character_flashlight"]
