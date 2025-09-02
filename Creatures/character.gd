@@ -32,6 +32,5 @@ func get_last_mouse_pos():
 
 
 
-
 func _on_flashlight_god_help_us_all():
 	flashlight.emit() 
