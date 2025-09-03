@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://c28hf7v0iarp"]
+[gd_scene load_steps=19 format=3 uid="uid://c28hf7v0iarp"]
 
 [ext_resource type="PackedScene" uid="uid://caqrfwj78qk08" path="res://Creatures/character.tscn" id="1_4j7pa"]
 [ext_resource type="Texture2D" uid="uid://b0x2uvog4fr5x" path="res://Textures/Tileset/Basetile.png" id="2_5sq33"]
@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://cmf8361jt5w0s" path="res://Creatures/monster_1.tscn" id="3_x1jhr"]
 [ext_resource type="PackedScene" uid="uid://hajuk2n703qe" path="res://Menus/pause_menu.tscn" id="4_v37ud"]
 [ext_resource type="Texture2D" uid="uid://dlptud7302oe8" path="res://Textures/Tileset/darker floor.png" id="5_cc86f"]
+[ext_resource type="Texture2D" uid="uid://d4m20o7tsl1um" path="res://Textures/Tileset/bigmoss.png" id="7_uxvmw"]
+[ext_resource type="Texture2D" uid="uid://bc6ab1vka87lf" path="res://Textures/Tileset/Fractal floor.png" id="8_s62vd"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_27vep"]
 
@@ -51,11 +53,15 @@ texture_region_size = Vector2i(100, 100)
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(50, -50, -50, -50, -50, 50, 50, 50)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hshkp"]
+texture = ExtResource("7_uxvmw")
+texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uujwh"]
+texture = ExtResource("8_s62vd")
+texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
