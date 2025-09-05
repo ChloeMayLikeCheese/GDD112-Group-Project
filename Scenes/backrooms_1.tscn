@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://c28hf7v0iarp"]
+[gd_scene load_steps=17 format=3 uid="uid://c28hf7v0iarp"]
 
 [ext_resource type="PackedScene" uid="uid://caqrfwj78qk08" path="res://Creatures/character.tscn" id="1_4j7pa"]
 [ext_resource type="Texture2D" uid="uid://b0x2uvog4fr5x" path="res://Textures/Tileset/Basetile.png" id="2_5sq33"]
@@ -89,7 +89,6 @@ visible = false
 visible = false
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-visible = false
 z_index = -1
 position = Vector2(1299, 479)
 scale = Vector2(215.56, 123.9)
