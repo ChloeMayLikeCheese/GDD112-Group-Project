@@ -1,30 +1,31 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1756933141
+::res://::1757035814
 icon.svg::CompressedTexture2D::9166394132642586946::1753412225::1756857510::1::::<><>::
+joruneled.png::CompressedTexture2D::7595436349202752906::1756933785::1756933796::1::::<><>::
 Playercharacter w flashlight.png::CompressedTexture2D::6940499140937436299::1756857984::1756858000::1::::<><>::
 README.md::TextFile::-1::1753229580::0::1::::<><>::
 Tileset thing.png::CompressedTexture2D::5875705616979932306::1756933141::1756933149::1::::<><>::
 YOUWIN.png::CompressedTexture2D::7988606545912374049::1756428913::1756428913::1::::<><>::
-::res://Creatures/::1756932603
+::res://Creatures/::1756934393
 character.gd::GDScript::-1::1756436740::0::1::::<>CharacterBody2D<>::
-character.tscn::PackedScene::4806913700213329771::1756932603::0::1::::<><>::res://Creatures/character.gd<>uid://kj5j1ed7rgs4::::res://Textures/Sprite sheets/Playerspritesheet.png<>uid://begj2j3dpscvb::::res://Scenes/flashlight.tscn
+character.tscn::PackedScene::4806913700213329771::1756934393::0::1::::<><>::res://Creatures/character.gd<>uid://kj5j1ed7rgs4::::res://Textures/Sprite sheets/Playerspritesheet.png<>uid://begj2j3dpscvb::::res://Scenes/flashlight.tscn
 darkener.tscn::PackedScene::8320359454214805796::1756253226::0::1::::<><>::
 Darkner.gd::GDScript::-1::1756434574::0::1::::<>CharacterBody2D<>::
 Facecreaturething.png::CompressedTexture2D::362615956996650371::1754614619::1754620856::1::::<><>::
-monster_1.tscn::PackedScene::5627484711627803900::1756932603::0::1::::<><>::res://Creatures/Darkner.gd<>uid://cn6mrrqhsh05j::::res://Textures/Sprite sheets/Darkner_spritesheet.png
-::res://Menus/::1756932604
+monster_1.tscn::PackedScene::5627484711627803900::1756934393::0::1::::<><>::res://Creatures/Darkner.gd<>uid://cn6mrrqhsh05j::::res://Textures/Sprite sheets/Darkner_spritesheet.png
+::res://Menus/::1756934394
 journal.gd::GDScript::-1::1756857244::0::1::::<>CanvasLayer<>::
-journal.tscn::PackedScene::4432145478485724276::1756932604::0::1::::<><>::res://Menus/journal.gd<>uid://b0x2uvog4fr5x::::res://Textures/Tileset/Basetile.png<>uid://dsobykbaipexe::::res://Textures/Tileset/Basetile - Copy.png<>res://Menus/JournalButton.gd
+journal.tscn::PackedScene::4432145478485724276::1756934394::0::1::::<><>::res://Menus/journal.gd<>uid://b0x2uvog4fr5x::::res://Textures/Tileset/Basetile.png<>uid://dsobykbaipexe::::res://Textures/Tileset/Basetile - Copy.png<>res://Menus/JournalButton.gd
 JournalButton.gd::GDScript::-1::1756857244::0::1::::<>TextureButton<>::
 pause_menu.gd::GDScript::-1::1756434574::0::1::::<>Control<>::
-pause_menu.tscn::PackedScene::491904641856882236::1756932604::0::1::::<><>::res://Menus/pause_menu.gd
+pause_menu.tscn::PackedScene::491904641856882236::1756934394::0::1::::<><>::res://Menus/pause_menu.gd
 start_menu.gd::GDScript::-1::1756429247::0::1::::<>Control<>::
-start_menu.tscn::PackedScene::8377942269114630969::1756932604::0::1::::<><>::res://Menus/start_menu.gd<>uid://cbs8vt828llr0::::res://Textures/Tileset/Battery.png<>uid://b0x2uvog4fr5x::::res://Textures/Tileset/Basetile.png
-::res://Scenes/::1756932605
-backrooms_1.tscn::PackedScene::198132360992665665::1756932604::0::1::::<><>::uid://caqrfwj78qk08::::res://Creatures/character.tscn<>uid://b0x2uvog4fr5x::::res://Textures/Tileset/Basetile.png<>uid://b4e712qwmlqcy::::res://Menus/journal.tscn<>uid://cq7tg5x5363ju::::res://Textures/Tileset/Stain1.png<>uid://dsobykbaipexe::::res://Textures/Tileset/Basetile - Copy.png<>uid://cmf8361jt5w0s::::res://Creatures/monster_1.tscn<>uid://hajuk2n703qe::::res://Menus/pause_menu.tscn<>uid://dlptud7302oe8::::res://Textures/Tileset/darker floor.png<>uid://d4m20o7tsl1um::::res://Textures/Tileset/bigmoss.png<>uid://bc6ab1vka87lf::::res://Textures/Tileset/Fractal floor.png
+start_menu.tscn::PackedScene::8377942269114630969::1756934394::0::1::::<><>::res://Menus/start_menu.gd<>uid://cbs8vt828llr0::::res://Textures/Tileset/Battery.png<>uid://b0x2uvog4fr5x::::res://Textures/Tileset/Basetile.png
+::res://Scenes/::1756934395
+backrooms_1.tscn::PackedScene::198132360992665665::1756934395::0::1::::<><>::uid://caqrfwj78qk08::::res://Creatures/character.tscn<>uid://b0x2uvog4fr5x::::res://Textures/Tileset/Basetile.png<>uid://b4e712qwmlqcy::::res://Menus/journal.tscn<>uid://cq7tg5x5363ju::::res://Textures/Tileset/Stain1.png<>uid://dsobykbaipexe::::res://Textures/Tileset/Basetile - Copy.png<>uid://cmf8361jt5w0s::::res://Creatures/monster_1.tscn<>uid://hajuk2n703qe::::res://Menus/pause_menu.tscn<>uid://dlptud7302oe8::::res://Textures/Tileset/darker floor.png<>uid://cpyiapdk8oh43::::res://Tileset thing.png<>uid://d4m20o7tsl1um::::res://Textures/Tileset/bigmoss.png<>uid://bc6ab1vka87lf::::res://Textures/Tileset/Fractal floor.png
 CharacterAnimations.gd::GDScript::-1::1755225286::0::1::::<>CharacterBody2D<>::
 flashlight.gd::GDScript::-1::1756857244::0::1::::<>Node2D<>::
-flashlight.tscn::PackedScene::2680157510261656371::1756932603::0::1::::<><>::uid://cptcvkakcbow3::::res://Textures/Light.png<>res://Scenes/flashlight.gd
+flashlight.tscn::PackedScene::2680157510261656371::1756934393::0::1::::<><>::uid://cptcvkakcbow3::::res://Textures/Light.png<>res://Scenes/flashlight.gd
 ::res://Textures/::1755219933
 Light.png::CompressedTexture2D::5865056660631943976::1754009982::1754615114::1::::<><>::
 ::res://Textures/Sprite sheets/::1755219941
