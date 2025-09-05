@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c55bah5rl05hn"
-path="res://.godot/imported/Playercharacter w flashlight.png-b31cc6b608d31773002baa51f4d46c89.ctex"
+uid="uid://cpyiapdk8oh43"
+path="res://.godot/imported/Tileset thing.png-c5cc47adbf64dd7a94853c199e720fe8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Playercharacter w flashlight.png"
-dest_files=["res://.godot/imported/Playercharacter w flashlight.png-b31cc6b608d31773002baa51f4d46c89.ctex"]
+source_file="res://Tileset thing.png"
+dest_files=["res://.godot/imported/Tileset thing.png-c5cc47adbf64dd7a94853c199e720fe8.ctex"]
 
 [params]
 
