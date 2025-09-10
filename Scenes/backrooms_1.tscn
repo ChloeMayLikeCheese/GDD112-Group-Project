@@ -249,6 +249,5 @@ position = Vector2(-403, 567)
 
 [node name="Breather" parent="." instance=ExtResource("12_2ldt7")]
 position = Vector2(1352, -380)
-targetable = false
 
 [connection signal="flashlight" from="Character" to="Monsters/Monster_1" method="_on_character_flashlight"]
