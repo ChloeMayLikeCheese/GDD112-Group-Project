@@ -221,7 +221,6 @@ visible = false
 visible = false
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-visible = false
 z_index = -1
 position = Vector2(1299, 479)
 scale = Vector2(215.56, 123.9)

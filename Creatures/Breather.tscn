@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://684qhy4hjux2"]
+
+[ext_resource type="Texture2D" uid="uid://bt46t4v3hk524" path="res://Textures/Sprite sheets/Breather_spritesheet.png" id="1_n3y54"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1hh4n"]
+resource_name = "Kevin"
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_n3y54")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m8smd"]
+size = Vector2(133, 524)
+
+[node name="Breather" type="CharacterBody2D"]
+
+[node name="Kevin" type="AnimatedSprite2D" parent="."]
+position = Vector2(423, 371)
+sprite_frames = SubResource("SpriteFrames_1hh4n")
+frame_progress = 0.375829
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(406, 409)
+shape = SubResource("RectangleShape2D_m8smd")

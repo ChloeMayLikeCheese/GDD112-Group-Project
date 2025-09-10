@@ -2,7 +2,7 @@ extends CharacterBody2D
 signal flashlight
 @onready var CharacterAnimation = $CharacterAnimations
 
-var speed = 200
+var speed = 400
 #Player movement and animations!!!!
 func _process(_delta):
 	var direction = Input.get_vector("Left","Right","Up","Down")
