@@ -1,5 +1,6 @@
 extends Node2D
 signal god_help_us_all
+signal breather_flashlight
 #this is a flashlight designed to stop evil monsters (batteries sold separately (you may need batteries for the batteries))
 
 
@@ -10,3 +11,4 @@ func _process(_delta):
 
 func _on_area_shape_entered(_area_rid, _area, _area_shape_index, _local_shape_index):
 	god_help_us_all.emit()
+	
