@@ -1,0 +1,116 @@
+[gd_scene load_steps=6 format=3 uid="uid://f03gu1f6p12p"]
+
+[ext_resource type="Script" path="res://Menus/game_over.gd" id="1_qv70a"]
+[ext_resource type="Texture2D" uid="uid://c4mitkfuj6n38" path="res://darkner jumpscare v2.png" id="2_es110"]
+[ext_resource type="Texture2D" uid="uid://d1febubk0671y" path="res://GAME OVER.png" id="3_s20mf"]
+
+[sub_resource type="Animation" id="Animation_ynapg"]
+resource_name = "Death"
+length = 12.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("death_animation:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 11.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0, 72]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MarginContainer:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 11.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.1, 11.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cekee"]
+_data = {
+"Death": SubResource("Animation_ynapg")
+}
+
+[node name="game_over" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qv70a")
+start_game = "res://Menus/start_menu.tscn"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -3467.0
+offset_top = -1235.0
+offset_right = 4094.0
+offset_bottom = 2101.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_cekee")
+}
+autoplay = "Death"
+
+[node name="death_animation" type="Sprite2D" parent="."]
+position = Vector2(640, 334)
+scale = Vector2(0.997656, 1)
+texture = ExtResource("2_es110")
+hframes = 74
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(569, 204)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("3_s20mf")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.114
+anchor_bottom = 0.062
+offset_left = 499.0
+offset_top = 386.0
+offset_right = 498.672
+offset_bottom = 385.824
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="main_menu" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Return to menu
+"
+
+[node name="quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(580, 320)
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/main_menu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dr6oonapaps1f"
-path="res://.godot/imported/darkner jumpscare.png-061e6ef34468f591a0b5c028c485a579.ctex"
+uid="uid://d1febubk0671y"
+path="res://.godot/imported/GAME OVER.png-82235676c24fe8ea2ff1881722a23e59.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://darkner jumpscare.png"
-dest_files=["res://.godot/imported/darkner jumpscare.png-061e6ef34468f591a0b5c028c485a579.ctex"]
+source_file="res://GAME OVER.png"
+dest_files=["res://.godot/imported/GAME OVER.png-82235676c24fe8ea2ff1881722a23e59.ctex"]
 
 [params]
 

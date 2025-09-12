@@ -1,9 +1,10 @@
+CollisionShape2D
+Sprite2D
+Area2D
 TextureButton
 Button
 TextureRect
 Control
 CanvasLayer
-Sprite2D
 Timer
-Area2D
 AnimatedSprite2D

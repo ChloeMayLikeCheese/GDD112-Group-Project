@@ -4,6 +4,46 @@
 [ext_resource type="Texture2D" uid="uid://bt46t4v3hk524" path="res://Textures/Sprite sheets/Breather_spritesheet.png" id="1_n3y54"]
 [ext_resource type="Texture2D" uid="uid://clv07p2feodat" path="res://Textures/round_light.png" id="3_uae07"]
 
+[sub_resource type="Animation" id="Animation_fqyts"]
+resource_name = "Dissapear"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [30]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 3.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D/DirectionalLight2D:energy")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.1, 2.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0, -0.0974999]
+}
+
 [sub_resource type="Animation" id="Animation_a6gdy"]
 resource_name = "appear"
 length = 8.0
@@ -125,46 +165,6 @@ tracks/2/keys = {
 }]
 }
 
-[sub_resource type="Animation" id="Animation_fqyts"]
-resource_name = "Dissapear"
-length = 4.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [30]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Sprite2D:modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.1, 3.1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Sprite2D/DirectionalLight2D:energy")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0.1, 2.4),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [1.0, -0.0974999]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ri7vx"]
 _data = {
 "Dissapear": SubResource("Animation_fqyts"),
@@ -181,7 +181,6 @@ collision_mask = 8
 script = ExtResource("1_6fgk1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 1, 0)
 position = Vector2(0, -288)
 texture = ExtResource("1_n3y54")
 hframes = 31
@@ -190,7 +189,6 @@ frame = 30
 [node name="DirectionalLight2D" type="PointLight2D" parent="Sprite2D"]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(-1, -147)
-energy = -0.0974999
 texture = ExtResource("3_uae07")
 texture_scale = 0.33
 
@@ -206,7 +204,7 @@ position = Vector2(5, -274)
 shape = SubResource("RectangleShape2D_m8smd")
 
 [node name="AttackTimer" type="Timer" parent="."]
-wait_time = 15.539
+wait_time = 10.0
 one_shot = true
 
 [connection signal="timeout" from="AttackTimer" to="." method="_on_attack_timer_timeout"]

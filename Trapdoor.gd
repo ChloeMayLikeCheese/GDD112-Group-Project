@@ -1,6 +1,6 @@
-extends TextureButton
+extends Area2D
+@export var next_level = ""
 
-@export var image_path:String
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -11,5 +11,9 @@ func _process(_delta):
 	pass
 
 
-func _on_pressed(): pass
-	#$"../InformationPage".texture = load(image_path)
+
+
+
+func _on_body_entered(body):
+	if body.name == "Character":
+		get_tree().call_deferred("change_scene_to_file",next_level)

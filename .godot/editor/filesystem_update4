@@ -5,6 +5,8 @@ res://Menus/journal.tscn
 res://Menus/pause_menu.tscn
 res://Menus/start_menu.tscn
 res://Scenes/backrooms_1.tscn
-res://Creatures/Breather.gd
-res://Creatures/Breather.tscn
-res://Scenes/flashlight.gd
+res://Scenes/backrooms_2.tscn
+res://Scenes/backrooms_3.tscn
+res://Scenes/backrooms_tutorial.tscn
+res://Trapdoor.gd
+res://Scenes/trapdoor.tscn
