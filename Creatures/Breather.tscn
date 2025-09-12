@@ -185,7 +185,6 @@ modulate = Color(1, 1, 1, 0)
 position = Vector2(0, -288)
 texture = ExtResource("1_n3y54")
 hframes = 31
-frame = 30
 
 [node name="DirectionalLight2D" type="PointLight2D" parent="Sprite2D"]
 modulate = Color(1, 1, 1, 0)
@@ -206,7 +205,7 @@ position = Vector2(5, -274)
 shape = SubResource("RectangleShape2D_m8smd")
 
 [node name="AttackTimer" type="Timer" parent="."]
-wait_time = 15.539
+wait_time = 10.0
 one_shot = true
 
 [connection signal="timeout" from="AttackTimer" to="." method="_on_attack_timer_timeout"]
