@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://diic6evgvrtsn"]
+[gd_scene load_steps=23 format=3 uid="uid://diic6evgvrtsn"]
 
 [ext_resource type="PackedScene" uid="uid://hajuk2n703qe" path="res://Menus/pause_menu.tscn" id="1_u0l2v"]
 [ext_resource type="PackedScene" uid="uid://b4e712qwmlqcy" path="res://Menus/journal.tscn" id="2_vrau0"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://caqrfwj78qk08" path="res://Creatures/character.tscn" id="10_t8spu"]
 [ext_resource type="PackedScene" uid="uid://cmf8361jt5w0s" path="res://Creatures/monster_1.tscn" id="11_xxw22"]
 [ext_resource type="PackedScene" uid="uid://684qhy4hjux2" path="res://Creatures/Breather.tscn" id="12_tu3i0"]
+[ext_resource type="PackedScene" uid="uid://c338ig4u6wv2l" path="res://Scenes/trapdoor.tscn" id="13_4p7dn"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_27vep"]
 
@@ -249,5 +250,10 @@ position = Vector2(-403, 567)
 
 [node name="Breather" parent="Monsters" instance=ExtResource("12_tu3i0")]
 position = Vector2(1352, -380)
+
+[node name="Trapdoor" parent="." instance=ExtResource("13_4p7dn")]
+position = Vector2(6806, 3494)
+scale = Vector2(2.02818, 2.02818)
+next_level = "res://Menus/start_menu.tscn"
 
 [connection signal="flashlight" from="Character" to="Monsters/Monster_1" method="_on_character_flashlight"]

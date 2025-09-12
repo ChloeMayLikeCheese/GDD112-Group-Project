@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://colplxlods8du"]
+[gd_scene load_steps=22 format=3 uid="uid://colplxlods8du"]
 
 [ext_resource type="PackedScene" uid="uid://hajuk2n703qe" path="res://Menus/pause_menu.tscn" id="1_2lmgs"]
 [ext_resource type="PackedScene" uid="uid://b4e712qwmlqcy" path="res://Menus/journal.tscn" id="2_sk27d"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://bc6ab1vka87lf" path="res://Textures/Tileset/Fractal floor.png" id="9_52oub"]
 [ext_resource type="PackedScene" uid="uid://caqrfwj78qk08" path="res://Creatures/character.tscn" id="10_ljlvf"]
 [ext_resource type="PackedScene" uid="uid://684qhy4hjux2" path="res://Creatures/Breather.tscn" id="12_itbfi"]
+[ext_resource type="PackedScene" uid="uid://c338ig4u6wv2l" path="res://Scenes/trapdoor.tscn" id="12_t5747"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_27vep"]
 
@@ -245,3 +246,8 @@ position = Vector2(1654, -567)
 
 [node name="Breather" parent="Monsters" instance=ExtResource("12_itbfi")]
 position = Vector2(1352, -380)
+
+[node name="Trapdoor" parent="." instance=ExtResource("12_t5747")]
+position = Vector2(-6900, -1401)
+scale = Vector2(1.93764, 1.93764)
+next_level = "res://Scenes/backrooms_3.tscn"

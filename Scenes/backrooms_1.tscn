@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://c28hf7v0iarp"]
+[gd_scene load_steps=23 format=3 uid="uid://c28hf7v0iarp"]
 
 [ext_resource type="PackedScene" uid="uid://caqrfwj78qk08" path="res://Creatures/character.tscn" id="1_4j7pa"]
 [ext_resource type="Texture2D" uid="uid://b0x2uvog4fr5x" path="res://Textures/Tileset/Basetile.png" id="2_5sq33"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://d4m20o7tsl1um" path="res://Textures/Tileset/bigmoss.png" id="7_uxvmw"]
 [ext_resource type="Texture2D" uid="uid://bc6ab1vka87lf" path="res://Textures/Tileset/Fractal floor.png" id="8_s62vd"]
 [ext_resource type="PackedScene" uid="uid://684qhy4hjux2" path="res://Creatures/Breather.tscn" id="12_2ldt7"]
+[ext_resource type="PackedScene" uid="uid://c338ig4u6wv2l" path="res://Scenes/trapdoor.tscn" id="13_ylid0"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_27vep"]
 
@@ -222,6 +223,7 @@ visible = false
 visible = false
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
+visible = false
 z_index = -1
 position = Vector2(2147, 546)
 scale = Vector2(215.56, 123.9)
@@ -248,5 +250,10 @@ position = Vector2(877, -380)
 
 [node name="Monster_1" parent="Monsters" instance=ExtResource("3_x1jhr")]
 position = Vector2(-403, 567)
+
+[node name="Trapdoor" parent="." instance=ExtResource("13_ylid0")]
+position = Vector2(10874, -1623)
+scale = Vector2(2.52002, 2.52002)
+next_level = "res://Scenes/backrooms_2.tscn"
 
 [connection signal="flashlight" from="Character" to="Monsters/Monster_1" method="_on_character_flashlight"]
