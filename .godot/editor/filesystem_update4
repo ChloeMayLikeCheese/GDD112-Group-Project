@@ -1,11 +1,10 @@
-res://Scenes/backrooms_1.tscn
-res://Scenes/backrooms_tutorial.tscn
-res://Scenes/backrooms_2.tscn
 res://Creatures/character.tscn
 res://Scenes/flashlight.tscn
 res://Creatures/monster_1.tscn
 res://Menus/journal.tscn
 res://Menus/pause_menu.tscn
 res://Menus/start_menu.tscn
+res://Scenes/backrooms_1.tscn
+res://Scenes/backrooms_2.tscn
 res://Scenes/backrooms_3.tscn
-res://Menus/JournalButton.gd
+res://Scenes/backrooms_tutorial.tscn
