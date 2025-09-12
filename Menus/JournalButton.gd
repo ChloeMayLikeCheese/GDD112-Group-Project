@@ -11,5 +11,5 @@ func _process(_delta):
 	pass
 
 
-func _on_pressed():
-	$"../InformationPage".texture = load(image_path)
+func _on_pressed(): pass
+	#$"../InformationPage".texture = load(image_path)

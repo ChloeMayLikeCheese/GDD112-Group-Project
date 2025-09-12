@@ -213,7 +213,7 @@ sources/4 = SubResource("TileSetAtlasSource_hshkp")
 sources/5 = SubResource("TileSetAtlasSource_uujwh")
 sources/3 = SubResource("TileSetAtlasSource_5yl38")
 
-[node name="Backrooms_1" type="Node2D"]
+[node name="Backrooms_2" type="Node2D"]
 
 [node name="PauseMenu" parent="." instance=ExtResource("4_v37ud")]
 visible = false
