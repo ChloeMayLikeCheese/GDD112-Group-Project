@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://bc6ab1vka87lf" path="res://Textures/Tileset/Fractal floor.png" id="9_52oub"]
 [ext_resource type="PackedScene" uid="uid://caqrfwj78qk08" path="res://Creatures/character.tscn" id="10_ljlvf"]
 [ext_resource type="PackedScene" uid="uid://684qhy4hjux2" path="res://Creatures/Breather.tscn" id="12_itbfi"]
-[ext_resource type="PackedScene" uid="uid://c338ig4u6wv2l" path="res://Scenes/trapdoor.tscn" id="12_t5747"]
+[ext_resource type="PackedScene" path="res://Scenes/trapdoor.tscn" id="12_t5747"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_27vep"]
 
@@ -222,7 +222,6 @@ visible = false
 visible = false
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-visible = false
 z_index = -1
 position = Vector2(2147, 546)
 scale = Vector2(215.56, 123.9)
