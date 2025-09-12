@@ -1,6 +1,6 @@
 extends CharacterBody2D
 signal flashlight
-var move_speed = -0
+var move_speed = -100
 var chasing = false
 func _physics_process(_delta):
 #the magic that makes the evil and conniving monster move!

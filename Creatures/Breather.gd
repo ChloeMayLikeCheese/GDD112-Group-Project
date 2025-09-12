@@ -22,17 +22,13 @@ var aggro_counter = 0
 
 func _process(_delta):
 	
-	#print("Doing stuff")
-	#print(global_position)
-	#print($"../../Character".global_position)
-	
 	#else, decrease counter by some smaller amount
 	aggro_counter -= 0.5
-	aggro_counter = clamp(aggro_counter, 0, 25)
+	aggro_counter = clamp(aggro_counter, 0, 30)
+	print(aggro_counter)
 	#if aggro counter is at max (or some value, play the mask breaking animation.
-	if aggro_counter >= 25:
+	if aggro_counter >= 30:
 		if $AnimationPlayer.current_animation == "appear":
-			print(aggro_counter)
 			$AnimationPlayer.play("mask_breaks")
 
 
@@ -57,7 +53,7 @@ func teleport():
 
 func attack():
 	$AnimationPlayer.play("Dissapear")
-	$AttackTimer.start((randi()%30)+10)
+	$AttackTimer.start((randi()%5)+10)
 	
 	#start the timer for the jumpscare
 	pass
@@ -72,4 +68,4 @@ func in_flashlight():
 		aggro_counter = aggro_counter + 1
 
 func _on_attack_timer_timeout():
-	pass # Replace with function body.
+	get_tree().call_deferred("change_scene_to_file","res://Menus/game_over.tscn")
