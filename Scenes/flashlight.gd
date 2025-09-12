@@ -11,6 +11,7 @@ func _process(_delta):
 		if not body is CharacterBody2D:
 			continue
 		if body.has_method("in_flashlight"):
+			print("do something")
 			body.in_flashlight()
 
 
