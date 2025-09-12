@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://clcsn84efs6ty"]
+[gd_scene load_steps=21 format=3 uid="uid://clcsn84efs6ty"]
 
 [ext_resource type="PackedScene" uid="uid://hajuk2n703qe" path="res://Menus/pause_menu.tscn" id="1_31p7b"]
 [ext_resource type="PackedScene" uid="uid://b4e712qwmlqcy" path="res://Menus/journal.tscn" id="2_iyidj"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://d4m20o7tsl1um" path="res://Textures/Tileset/bigmoss.png" id="8_quy4e"]
 [ext_resource type="Texture2D" uid="uid://bc6ab1vka87lf" path="res://Textures/Tileset/Fractal floor.png" id="9_fhic1"]
 [ext_resource type="PackedScene" uid="uid://caqrfwj78qk08" path="res://Creatures/character.tscn" id="10_m2h77"]
+[ext_resource type="PackedScene" uid="uid://c338ig4u6wv2l" path="res://Scenes/trapdoor.tscn" id="11_ikfwf"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_27vep"]
 
@@ -239,3 +240,8 @@ layer_1/tile_data = PackedInt32Array()
 
 [node name="Character" parent="." instance=ExtResource("10_m2h77")]
 position = Vector2(1654, -567)
+
+[node name="Trapdoor" parent="." instance=ExtResource("11_ikfwf")]
+position = Vector2(10878, -1612)
+scale = Vector2(2.4, 2.4)
+next_level = "res://Scenes/backrooms_1.tscn"

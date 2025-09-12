@@ -8,3 +8,5 @@ res://Scenes/backrooms_1.tscn
 res://Scenes/backrooms_2.tscn
 res://Scenes/backrooms_3.tscn
 res://Scenes/backrooms_tutorial.tscn
+res://Trapdoor.gd
+res://Scenes/trapdoor.tscn
