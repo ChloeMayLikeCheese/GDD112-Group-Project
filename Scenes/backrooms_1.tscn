@@ -222,7 +222,6 @@ visible = false
 visible = false
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-visible = false
 z_index = -1
 position = Vector2(2147, 546)
 scale = Vector2(215.56, 123.9)
@@ -240,14 +239,14 @@ layer_0/tile_data = PackedInt32Array(-65547, 3, 0, -11, 3, 1, 65525, 3, 0, 13106
 layer_1/tile_data = PackedInt32Array(-393255, 786435, 0, -327719, 786435, 1, -393254, 851971, 0, -327718, 851971, 1, -262183, 655363, 0, -196647, 655363, 1, -262182, 720899, 0, -196646, 720899, 1, -393253, 1048579, 0, -327717, 1048579, 1, -393252, 1114115, 0, -327716, 1114115, 1, 2097215, 1179651, 0, 2162752, 1179651, 0, -1703940, 1179651, 0, -1638402, 1179651, 0, -982946, 786435, 0, -917410, 786435, 1, -982945, 851971, 0, -917409, 851971, 1, -851874, 655363, 0, -786338, 655363, 1, -851873, 720899, 0, -786337, 720899, 1)
 
 [node name="Character" parent="." instance=ExtResource("1_4j7pa")]
-position = Vector2(1654, -567)
+position = Vector2(2305, -559)
 
 [node name="Monsters" type="Node2D" parent="."]
 
+[node name="Breather" parent="Monsters" instance=ExtResource("12_2ldt7")]
+position = Vector2(877, -380)
+
 [node name="Monster_1" parent="Monsters" instance=ExtResource("3_x1jhr")]
 position = Vector2(-403, 567)
-
-[node name="Breather" parent="." instance=ExtResource("12_2ldt7")]
-position = Vector2(1352, -380)
 
 [connection signal="flashlight" from="Character" to="Monsters/Monster_1" method="_on_character_flashlight"]

@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+const MAX_DISTANCE = 500
+const MIN_DISTANCE = 100
 var aggro_counter = 0
 @export var targetable = false
 #the breather will hide in the darkness.
@@ -19,40 +21,55 @@ var aggro_counter = 0
 
 
 func _process(_delta):
-
+	
+	#print("Doing stuff")
+	#print(global_position)
+	#print($"../../Character".global_position)
 	
 	#else, decrease counter by some smaller amount
 	aggro_counter -= 0.5
-	
+	aggro_counter = clamp(aggro_counter, 0, 30)
 	#if aggro counter is at max (or some value, play the mask breaking animation.
-	if aggro_counter > 30:
+	if aggro_counter >= 30:
 		if $AnimationPlayer.current_animation == "appear":
+			print(aggro_counter)
 			$AnimationPlayer.play("mask_breaks")
 
 
 func teleport():
 	#find some random position around the player. (for now, don't worry about if the position is actually IN the room)
-	
+	var x_offset = (randi()%(MAX_DISTANCE - MIN_DISTANCE)) + MIN_DISTANCE
+	if randi()%2 == 1:
+		x_offset *= -1
+	var y_offset = (randi()%(MAX_DISTANCE - MIN_DISTANCE)) + MIN_DISTANCE
+	if randi()%2 == 1:
+		y_offset *= -1
+	var offset = Vector2(x_offset, y_offset)
 	#take player's position, target position = player positon +/- (some random number)
-	
-	#set the position to that location
+	global_position = $"../../Character".global_position + offset
+	#set the position to tsahat location
 	#play the appear animation again.
-	
+	$AnimationPlayer.play("appear")
 	
 	#TODO: make this run a timer instead. Only teleport when this timer is up.
-	pass
+	
 
 
 func attack():
+	$AnimationPlayer.play("Dissapear")
 	$AttackTimer.start()
 	
 	#start the timer for the jumpscare
 	pass
 	
 #TODO: create a timer for the jumpscare
-#on this timer timing out, play the jumpscare animation and kill the player
+#on this timer timing oudaaat, play the jumpscare animation and kill the player
 
 func in_flashlight():
 		#check if the player's flashlight is on top of self
 	#if it is, increase aggro counter by some amount
-	aggro_counter = aggro_counter + 1
+	if targetable:
+		aggro_counter = aggro_counter + 1
+
+func _on_attack_timer_timeout():
+	pass # Replace with function body.
