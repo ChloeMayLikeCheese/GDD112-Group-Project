@@ -30,8 +30,9 @@ func _process(_delta):
 	aggro_counter -= 0.5
 	aggro_counter = clamp(aggro_counter, 0, 30)
 	#if aggro counter is at max (or some value, play the mask breaking animation.
-	if aggro_counter > 30:
+	if aggro_counter >= 30:
 		if $AnimationPlayer.current_animation == "appear":
+			print(aggro_counter)
 			$AnimationPlayer.play("mask_breaks")
 
 
@@ -48,7 +49,6 @@ func teleport():
 	global_position = $"../../Character".global_position + offset
 	#set the position to tsahat location
 	#play the appear animation again.
-	print(global_position)
 	$AnimationPlayer.play("appear")
 	
 	#TODO: make this run a timer instead. Only teleport when this timer is up.
@@ -56,6 +56,7 @@ func teleport():
 
 
 func attack():
+	$AnimationPlayer.play("Dissapear")
 	$AttackTimer.start()
 	
 	#start the timer for the jumpscare
@@ -69,7 +70,6 @@ func in_flashlight():
 	#if it is, increase aggro counter by some amount
 	if targetable:
 		aggro_counter = aggro_counter + 1
-		print("targetable")
 
 func _on_attack_timer_timeout():
 	pass # Replace with function body.

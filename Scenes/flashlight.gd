@@ -10,9 +10,7 @@ func _process(_delta):
 	for body in $".".get_overlapping_bodies():
 		if not body is CharacterBody2D:
 			continue
-		print(body.name)
 		if body.has_method("in_flashlight"):
-			print("bodyaaaa it byrnswd")
 			body.in_flashlight()
 
 
