@@ -28,9 +28,9 @@ func _process(_delta):
 	
 	#else, decrease counter by some smaller amount
 	aggro_counter -= 0.5
-	aggro_counter = clamp(aggro_counter, 0, 30)
+	aggro_counter = clamp(aggro_counter, 0, 25)
 	#if aggro counter is at max (or some value, play the mask breaking animation.
-	if aggro_counter >= 30:
+	if aggro_counter >= 25:
 		if $AnimationPlayer.current_animation == "appear":
 			print(aggro_counter)
 			$AnimationPlayer.play("mask_breaks")
@@ -57,7 +57,7 @@ func teleport():
 
 func attack():
 	$AnimationPlayer.play("Dissapear")
-	$AttackTimer.start()
+	$AttackTimer.start((randi()%30)+10)
 	
 	#start the timer for the jumpscare
 	pass
